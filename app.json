@@ -10,15 +10,31 @@
     "cloud-development",
     "heroku-api"
   ],
-  "env": {
-    "GIT_REPO": {
-      "description": "URL of a git repo to clone (optional)",
-      "required": false
-    },
-    "PASSWORD": {
-      "description": "Create a password to log in to code-server with",
-      "required": true
-    }
-  },
+    "env": {
+      "PASSWORD": {
+      "description": "Code-Server login password",
+        "value" : "samplepass",
+      "required" : true
+      },
+      "NO_SLEEP":{
+      "description": "0 to Sleep , 1 to No Sleep",
+            "value" : "1",
+            "required" : true
+      },
+      "APP_NAME":{
+      "description": "Your App Name Here",
+            "required" : true
+      },
+      "RCLONE_DATA":{
+      "description": "Your Rclone Data \n cat $(rclone config file | sed -n 2p) | base64 --wrap=0",
+            "required" : true
+      },
+      "COMPILE_TIMEOUT":{
+      "description": "COMPILE TIMEOUT",
+            "value" : "3000",
+            "required" : true
+      }
+        } 
+  ,
   "stack": "container"
 }
