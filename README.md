@@ -1,5 +1,5 @@
 # deploy-code-server 🚀
-#To Deploy In Heroku Click Below \n
+#To Deploy In Heroku Click Below 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/charan200415/vscode)
 
