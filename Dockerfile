@@ -46,7 +46,8 @@ RUN sudo apt install python3-pip -y
 #RUN 
 # Port
 ENV PORT=8080
-
+#copy charan
+COPY charan/ /app/
 # Use our custom entrypoint script first
 COPY deploy-container/entrypoint.sh /usr/bin/deploy-container-entrypoint.sh
 ENTRYPOINT ["/usr/bin/deploy-container-entrypoint.sh"]
