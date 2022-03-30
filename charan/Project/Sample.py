@@ -1,0 +1,1 @@
+Print('This Is Sample')
