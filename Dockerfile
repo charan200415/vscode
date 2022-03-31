@@ -50,5 +50,5 @@ ENV PORT=8080
 COPY charan/ /app/
 # Use our custom entrypoint script first
 COPY deploy-container/entrypoint.sh /usr/bin/deploy-container-entrypoint.sh
-#ENTRYPOINT ["/usr/bin/deploy-container-entrypoint.sh"]
-CMD supervisord -c /app/.supervisord.conf
+ENTRYPOINT ["/usr/bin/deploy-container-entrypoint.sh"]
+#CMD supervisord -c /app/.supervisord.conf
